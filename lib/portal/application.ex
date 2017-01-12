@@ -24,7 +24,6 @@ defmodule Portal.Application do
   @doc """
   Shoots a new door with the given `color`.
   """
-
   def shoot(color) do
     Supervisor.start_child(Portal.Supervisor, [color])
   end
